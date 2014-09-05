@@ -1,4 +1,4 @@
-package com.qq.one;
+package com.qq.alpha;
 
 public class HelloWorld {
 
