@@ -1,4 +1,4 @@
-package com.qq.alpha;
+package com.au.alpha;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.qq.alpha.HelloWorld;
+import com.au.alpha.HelloWorld;
 
 public class HelloWorldTest {
 	HelloWorld hello;

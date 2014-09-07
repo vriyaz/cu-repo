@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = 'com.qq.one.HelloWorld'
+//mainClassName = 'com.au.alpha.HelloWorld'
 
 // tag::repositories[]
 repositories {
@@ -13,7 +13,7 @@ repositories {
 
 // tag::jar[]
 jar {
-    baseName = 'qq-one'
+    baseName = 'au-alpha'
     version =  '0.1.0'
 }
 // end::jar[]

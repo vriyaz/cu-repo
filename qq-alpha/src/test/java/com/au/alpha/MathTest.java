@@ -1,4 +1,4 @@
-package com.qq.alpha;
+package com.au.alpha;
 
 import static org.hamcrest.CoreMatchers.anyOf;
 import static org.hamcrest.CoreMatchers.is;
@@ -13,6 +13,8 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+
+import com.au.alpha.Math;
 
 public class MathTest {
 
