@@ -1,4 +1,4 @@
-au-repo
+cu-repo
 =======
 
-Gold repo
+copper repo
