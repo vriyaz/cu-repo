@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.cu.alpha.HelloWorld;
+import com.cu.aaa.HelloWorld;
 
 public class HelloWorldTest {
 	HelloWorld hello;

@@ -1,4 +1,4 @@
-package com.cu.alpha;
+package com.cu.aaa;
 
 public class HelloWorld {
 

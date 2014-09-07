@@ -14,7 +14,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
-import com.cu.alpha.Math;
+import com.cu.aaa.Math;
 
 public class MathTest {
 
