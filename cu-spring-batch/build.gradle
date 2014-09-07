@@ -15,7 +15,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'qq-spring-batch'
+    baseName = 'cu-spring-batch'
     version =  '0.1.0'
 }
 
