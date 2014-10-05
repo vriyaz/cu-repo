@@ -4,11 +4,7 @@ import com.cu.annotation.CuTest;
 import com.cu.annotation.CuTesterInfo;
 import com.cu.annotation.CuTesterInfo.Priority;
 
-@CuTesterInfo (
-		priority = Priority.HIGH,
-		createdBy = "cu",
-		tags = {"cu", "test"}
-)
+@CuTesterInfo(priority = Priority.HIGH, createdBy = "cu", tags = {"cu", "test"}) 
 public class CuTestExample {
 	@CuTest void testA() {
 		if (true)
