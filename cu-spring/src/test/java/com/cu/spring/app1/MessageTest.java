@@ -1,4 +1,4 @@
-package com.cu.spring.one;
+package com.cu.spring.app1;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.cu.spring.one.Message;
+import com.cu.spring.app1.Message;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration

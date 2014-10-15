@@ -26,8 +26,17 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-batch")
-    compile("org.hsqldb:hsqldb")
+    compile "org.springframework.boot:spring-boot-starter-batch"
+    compile "org.hsqldb:hsqldb"
+    
+    compile "org.springframework:spring-core:3.2.2.RELEASE"
+    compile "org.springframework:spring-jdbc:3.2.2.RELEASE"
+    compile "org.springframework:spring-oxm:3.2.2.RELEASE"
+    compile "mysql:mysql-connector-java:5.1.25"
+    compile "org.springframework.batch:spring-batch-core:2.2.0.RELEASE"
+    compile "org.springframework.batch:spring-batch-infrastructure:2.2.0.RELEASE"
+    compile "org.springframework.batch:spring-batch-test:2.2.0.RELEASE"
+    
     testCompile("junit:junit")
 }
 

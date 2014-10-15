@@ -1,4 +1,4 @@
-package com.cu.spring.batch;
+package com.cu.spring.batch.app1;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

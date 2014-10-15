@@ -11,6 +11,7 @@ public class CuTestExample {
 			throw new RuntimeException("this always fails!");
 	}
 	
+	@SuppressWarnings("unused")
 	@CuTest(enabled = false) void testB() {
 		if (false)
 			throw new RuntimeException("this always passes!");

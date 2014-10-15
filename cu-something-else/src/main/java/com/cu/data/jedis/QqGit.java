@@ -1,4 +1,4 @@
-package com.cu.one;
+package com.cu.data.jedis;
 
 public class QqGit {
 

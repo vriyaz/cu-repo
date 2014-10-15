@@ -1,4 +1,4 @@
-package com.cu.spring.batch;
+package com.cu.spring.batch.app1;
 
 import java.util.List;
 
@@ -16,8 +16,7 @@ public class Application {
 		ApplicationContext context = SpringApplication.run(Application.class, args);
 		
 		List<Person> results = context.getBean(JdbcTemplate.class)
-									  .query("SELECT first_name, last_name FROM people", 
-											  new PersonRowMapper());
+									  .query("SELECT first_name, last_name FROM people", new PersonRowMapper());
 		
 		for (Person person : results) {
 			System.out.println("Found <" + person + "> in the DB");

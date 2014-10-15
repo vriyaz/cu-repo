@@ -1,4 +1,4 @@
-package com.cu.spring.batch;
+package com.cu.spring.batch.app1;
 
 public class Person {
 	private String lastName;

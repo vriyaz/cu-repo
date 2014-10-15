@@ -1,4 +1,4 @@
-package com.cu.spring.one;
+package com.cu.spring.app1;
 
 public class Message {
 	private String message;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="transformerFactory" class="javax.xml.transform.TransformerFactory" factory-method="newInstance"/>
+	<bean id="stringWriter" class="java.io.StringWriter"></bean>
+	<bean id="streamResult" class="javax.xml.transform.stream.StreamResult">
+		<constructor-arg ref="stringWriter" />
+	</bean>
+	
+	<bean id="stringReader" class="java.io.StringReader">
+		<constructor-arg type="String" value="njmk"/>
+	</bean>
+	<bean id="streamSource" class="javax.xml.transform.stream.StreamSource">
+    	<property name="reader" ref="stringReader"/>
+	</bean>
+	<bean id="transformer" factory-bean="transformerFactory" factory-method="newTransformer">
+    	<constructor-arg ref="streamSource"/>
+	</bean>
+	 
+</beans>
