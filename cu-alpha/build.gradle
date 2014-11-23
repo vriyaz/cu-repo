@@ -21,6 +21,8 @@ jar {
 // tag::dependencies[]
 dependencies {
     compile "joda-time:joda-time:2.2"
+    
+    compile "org.codehaus.jackson:jackson-mapper-asl:1.8.5"
 }
 // end::dependencies[]
 
