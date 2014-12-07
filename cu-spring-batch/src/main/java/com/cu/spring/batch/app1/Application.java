@@ -12,14 +12,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 @EnableAutoConfiguration
 public class Application {
 
-	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(Application.class, args);
-		
-		List<Person> results = context.getBean(JdbcTemplate.class)
-									  .query("SELECT first_name, last_name FROM people", new PersonRowMapper());
-		
-		for (Person person : results) {
-			System.out.println("Found <" + person + "> in the DB");
-		}
-	}
+  public static void main(String[] args) {
+    ApplicationContext context = SpringApplication.run(Application.class, args);
+
+    List<Person> results = context.getBean(JdbcTemplate.class).query(
+        "SELECT first_name, last_name FROM people", new PersonRowMapper());
+
+    for (Person person : results) {
+      System.out.println("Found <" + person + "> in the DB");
+    }
+  }
 }

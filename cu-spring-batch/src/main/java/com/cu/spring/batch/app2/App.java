@@ -9,22 +9,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class App {
 
-	private static ApplicationContext context;
+  private static ApplicationContext context;
 
-	public static void main(String[] args) {
-		String[] springConfig = { "job-csv2xml.xml" };
-		
-		try {
-			context = new ClassPathXmlApplicationContext(springConfig);
-			
-			JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
-			Job job = (Job)  context.getBean("helloWorldJob");
-			JobExecution execution = jobLauncher.run(job, new JobParameters());
-			System.out.println("Exit status: " + execution.getExitStatus());
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		System.out.println("Done");
-	}
+  public static void main(String[] args) {
+    String[] springConfig = { "job-csv2xml.xml" };
+
+    try {
+      context = new ClassPathXmlApplicationContext(springConfig);
+
+      JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
+      Job job = (Job) context.getBean("helloWorldJob");
+      JobExecution execution = jobLauncher.run(job, new JobParameters());
+      System.out.println("Exit status: " + execution.getExitStatus());
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    System.out.println("Done");
+  }
 }
