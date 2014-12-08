@@ -48,6 +48,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-batch")
     compile("org.hsqldb:hsqldb")
 
+    compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework:spring-jms")
+    compile("org.apache.activemq:activemq-broker")
+    
 	compile("org.springframework.boot:spring-boot-starter-web")
 
 	testCompile 'org.springframework:spring-test:3.2.3.RELEASE'
